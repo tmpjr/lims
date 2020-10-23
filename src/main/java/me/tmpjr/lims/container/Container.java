@@ -3,6 +3,7 @@ package me.tmpjr.lims.container;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import me.tmpjr.lims.entity.BaseEntity;
+import me.tmpjr.lims.user.ApplicationUser;
 
 import javax.persistence.*;
 import javax.validation.Valid;
@@ -16,5 +17,4 @@ import javax.validation.constraints.NotBlank;
 public class Container extends BaseEntity {
     @NotBlank(message = "Container name is required.")
     private String containerName;
-
 }
